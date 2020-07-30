@@ -32,12 +32,13 @@ export default function Project({slug, projects}) {
           {documentToReactComponents(project.description)}
         </section>
         {(project.gallery && project.gallery.length) && (
-          <ul className="Project__image-list flex flex-column items-center mt6">
+          <ul className="Project__image-list flex flex-column items-center mt5 mt6-lg">
             {project.gallery.map((item, index) => {
               const randomWalk = walkArr[(index + 3) % 8];
               return (
                 <li
-                  className={classnames('Project__image-wrapper mb6', {
+                  key={index}
+                  className={classnames('Project__image-wrapper mb5 mb6-lg', {
                     'Project__image-wrapper--left-far': randomWalk === -2,
                     'Project__image-wrapper--left': randomWalk === -1,
                     'Project__image-wrapper--right': randomWalk === 1,

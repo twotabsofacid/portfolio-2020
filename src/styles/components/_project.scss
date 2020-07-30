@@ -3,7 +3,7 @@
     max-width: 800px;
   }
   &__title {
-    max-width: 1200px;
+    max-width: 1000px;
     display: inline-block;
   }
   &__link {
@@ -32,16 +32,24 @@
       z-index: -1;
     }
     &--far-left {
-      margin-left: -16vw;
+      @media (query(lg-up)) {
+        margin-left: -16vw;
+      }
     }
     &--left {
-      margin-left: -8vw;
+      @media (query(lg-up)) {
+        margin-left: -8vw;
+      }
     }
     &--right {
-      margin-right: -8vw;
+      @media (query(lg-up)) {
+        margin-right: -8vw;
+      }
     }
     &--far-right {
-      margin-right: -16vw;
+      @media (query(lg-up)) {
+        margin-right: -16vw;
+      }
     }
   }
   &__image {
