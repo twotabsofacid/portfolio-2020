@@ -1,0 +1,71 @@
+/*
+
+   TEXT DECORATION
+   Docs: http://tachyons.io/docs/typography/text-decoration/
+
+
+  Media Query Extensions:
+    -md  = medium (768 up)
+    -lg  = large (1024 up)
+    -xl  = extra large (1440 up)
+    -xxl = extra extra large (1920 up)
+
+*/
+
+.strike {
+  text-decoration: line-through;
+}
+.underline {
+  text-decoration: underline;
+}
+.no-underline {
+  text-decoration: none;
+}
+
+@media (query(md-up)) {
+  .strike-md {
+    text-decoration: line-through;
+  }
+  .underline-md {
+    text-decoration: underline;
+  }
+  .no-underline-md {
+    text-decoration: none;
+  }
+}
+
+@media (query(lg-up)) {
+  .strike-lg {
+    text-decoration: line-through;
+  }
+  .underline-lg {
+    text-decoration: underline;
+  }
+  .no-underline-lg {
+    text-decoration: none;
+  }
+}
+
+@media (query(xl-up)) {
+  .strike-xl {
+    text-decoration: line-through;
+  }
+  .underline-xl {
+    text-decoration: underline;
+  }
+  .no-underline-xl {
+    text-decoration: none;
+  }
+}
+
+@media (query(xxl-up)) {
+  .strike-xxl {
+    text-decoration: line-through;
+  }
+  .underline-xxl {
+    text-decoration: underline;
+  }
+  .no-underline-xxl {
+    text-decoration: none;
+  }
+}

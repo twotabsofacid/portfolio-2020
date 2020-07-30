@@ -1,0 +1,28 @@
+//
+// Root styles
+//
+body,
+.body-copy {
+  font-family: $body-font;
+  font-size: 1rem;
+  line-height: 1.125;
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid color('gray');
+  &:hover {
+    color: color('blue');
+    border-bottom-color: color('blue');
+  }
+}
+.body-header {
+  font-family: $body-font;
+  font-weight: bold;
+  display: inline;
+  font-size: calc(4.8vh + 4.1vw);
+  color: color('gray');
+  letter-spacing: -0.0625rem;
+  line-height: 1.0125;
+}

@@ -1,0 +1,6 @@
+//
+// Standard transition, so we don't mix and match timing and easing functions
+//
+@mixin standard-transition($property: all, $time: 0.3s, $ease: ease) {
+  transition: $property $time $ease;
+}

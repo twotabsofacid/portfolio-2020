@@ -1,0 +1,51 @@
+.Project {
+  &__image-wrapper {
+    max-width: 800px;
+  }
+  &__title {
+    max-width: 1200px;
+    display: inline-block;
+  }
+  &__link {
+    display: inline;
+    border-bottom: none;
+    &:hover {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 0;
+      border-bottom-color: transparent;
+      background-image: linear-gradient(to right, color('blue'), color('purple'));
+      background-size: 400% 400%;
+      animation: backgroundPositionShift 4s ease infinite;
+    }
+  }
+  &__image-wrapper {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      width: calc(100% + 0.5rem);
+      height: calc(100% + 0.5rem);
+      top: -0.25rem;
+      left: -0.25rem;
+      background: linear-gradient(-45deg, color('midgrayone'), color('midgraytwo'));
+      z-index: -1;
+    }
+    &--far-left {
+      margin-left: -16vw;
+    }
+    &--left {
+      margin-left: -8vw;
+    }
+    &--right {
+      margin-right: -8vw;
+    }
+    &--far-right {
+      margin-right: -16vw;
+    }
+  }
+  &__image {
+    position: relative;
+    display: block;
+  }
+}

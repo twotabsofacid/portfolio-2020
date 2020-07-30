@@ -1,0 +1,22 @@
+.Preview-warning {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1514a;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: zIndex('high');
+  p {
+    font-weight: bold;
+    color: color('white');
+    font-size: 78%;
+    line-height: 1;
+    padding: 0.5rem;
+    letter-spacing: 0.025rem;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

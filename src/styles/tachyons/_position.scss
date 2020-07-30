@@ -1,0 +1,137 @@
+/*
+   POSITIONING
+   Docs: http://tachyons.io/docs/layout/position/
+   Media Query Extensions:
+     -md  = medium (768 up)
+     -lg  = large (1024 up)
+     -xl  = extra large (1440 up)
+     -xxl = extra extra large (1920 up)
+*/
+
+.static {
+  position: static;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.absolute-centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.absolute-middle-centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (query(md-up)) {
+  .static-md {
+    position: static;
+  }
+  .relative-md {
+    position: relative;
+  }
+  .absolute-md {
+    position: absolute;
+  }
+  .fixed-md {
+    position: fixed;
+  }
+  .sticky-md {
+    position: sticky;
+    top: 0;
+  }
+  .absolute-centered-md {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (query(lg-up)) {
+  .static-lg {
+    position: static;
+  }
+  .relative-lg {
+    position: relative;
+  }
+  .absolute-lg {
+    position: absolute;
+  }
+  .fixed-lg {
+    position: fixed;
+  }
+  .sticky-lg {
+    position: sticky;
+    top: 0;
+  }
+  .absolute-centered-lg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (query(xl-up)) {
+  .static-xl {
+    position: static;
+  }
+  .relative-xl {
+    position: relative;
+  }
+  .absolute-xl {
+    position: absolute;
+  }
+  .fixed-xl {
+    position: fixed;
+  }
+  .sticky-xl {
+    position: sticky;
+    top: 0;
+  }
+  .absolute-centered-xl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (query(xxl-up)) {
+  .static-xxl {
+    position: static;
+  }
+  .relative-xxl {
+    position: relative;
+  }
+  .absolute-xxl {
+    position: absolute;
+  }
+  .fixed-xxl {
+    position: fixed;
+  }
+  .sticky-xxl {
+    position: sticky;
+    top: 0;
+  }
+  .absolute-centered-xxl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

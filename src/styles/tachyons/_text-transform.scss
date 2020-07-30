@@ -1,0 +1,89 @@
+/*
+   TEXT TRANSFORM
+   Docs: http://tachyons.io/docs/typography/text-transform/
+   Base:
+     tt = text-transform
+   Modifiers
+     c = capitalize
+     l = lowercase
+     u = uppercase
+     n = none
+   Media Query Extensions:
+     -md  = medium (768 up)
+     -lg  = large (1024 up)
+     -xl  = extra large (1440 up)
+     -xxl = extra extra large (1920 up)
+*/
+
+.ttc {
+  text-transform: capitalize;
+}
+.ttl {
+  text-transform: lowercase;
+}
+.ttu {
+  text-transform: uppercase;
+}
+.ttn {
+  text-transform: none;
+}
+
+@media (query(md-up)) {
+  .ttc-md {
+    text-transform: capitalize;
+  }
+  .ttl-md {
+    text-transform: lowercase;
+  }
+  .ttu-md {
+    text-transform: uppercase;
+  }
+  .ttn-md {
+    text-transform: none;
+  }
+}
+
+@media (query(lg-up)) {
+  .ttc-lg {
+    text-transform: capitalize;
+  }
+  .ttl-lg {
+    text-transform: lowercase;
+  }
+  .ttu-lg {
+    text-transform: uppercase;
+  }
+  .ttn-lg {
+    text-transform: none;
+  }
+}
+
+@media (query(xl-up)) {
+  .ttc-xl {
+    text-transform: capitalize;
+  }
+  .ttl-xl {
+    text-transform: lowercase;
+  }
+  .ttu-xl {
+    text-transform: uppercase;
+  }
+  .ttn-xl {
+    text-transform: none;
+  }
+}
+
+@media (query(xxl-up)) {
+  .ttc-xxl {
+    text-transform: capitalize;
+  }
+  .ttl-xxl {
+    text-transform: lowercase;
+  }
+  .ttu-xxl {
+    text-transform: uppercase;
+  }
+  .ttn-xxl {
+    text-transform: none;
+  }
+}

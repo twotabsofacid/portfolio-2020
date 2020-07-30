@@ -1,0 +1,33 @@
+.Border {
+  position: fixed;
+  background-color: color('red');
+  z-index: 100;
+  &--top {
+    width: 100%;
+    height: 0.25rem;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, color('red'), color('yellow'));
+  }
+  &--left {
+    height: 100%;
+    width: 0.25rem;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to top, color('yellow'), color('red'));
+  }
+  &--bottom {
+    width: 100%;
+    height: 0.25rem;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to left, color('red'), color('yellow'));
+  }
+  &--right {
+    height: 100%;
+    width: 0.25rem;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to bottom, color('yellow'), color('red'));
+  }
+}

@@ -1,0 +1,8 @@
+## netlify.toml
+[build]
+  command = "yarn build && yarn export"
+  publish = "out"
+[[headers]]
+  for = "/images/og.jpg"
+  [headers.values]
+    Cache-Control = 'max-age=0,no-cache,no-store,must-revalidate'

@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_PATH=./src next dev",
+    "build": "NODE_PATH=./src next build",
+    "start": "NODE_PATH=./src next start",
+    "export": "NODE_PATH=./src next export",
+    "setup": "node ./helpers/contentful/setup.js $CONTENTFUL_SPACE_ID $CONTENTFUL_MANAGEMENT_TOKEN"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.1",
+    "classnames": "^2.2.6",
+    "contentful": "^7.14.4",
+    "contentful-import": "^7.7.18",
+    "dotenv": "^8.2.0",
+    "next": "9.4.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-purgecss": "^4.0.0",
+    "next-transpile-modules": "^3.3.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.5"
+  }
+}

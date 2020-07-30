@@ -1,0 +1,18 @@
+.Header {
+  &__logo {
+    font-family: $special-header-font;
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom: none;
+    letter-spacing: -0.0625rem;
+  }
+  .Navigation {
+    &__link {
+      display: inline-block;
+      font-family: $header-font;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: 0.125rem;
+    }
+  }
+}

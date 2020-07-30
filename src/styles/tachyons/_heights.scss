@@ -1,0 +1,88 @@
+/*
+   HEIGHTS
+   Base:
+    h = height
+   Modifiers:
+    100   = 100 vh
+    75    = 75 vh
+    50    = 50 vh
+    a     = auto
+   Media Query Extensions:
+     -md  = medium (768 up)
+     -lg  = large (1024 up)
+     -xl  = extra large (1440 up)
+     -xxl = extra extra large (1920 up)
+*/
+
+.h100 {
+  height: 100vh;
+}
+.h75 {
+  height: 75vh;
+}
+.h50 {
+  height: 50vh;
+}
+.ha {
+  height: auto;
+}
+
+@media (query(md-up)) {
+  .h100-md {
+    height: 100vh;
+  }
+  .h75-md {
+    height: 75vh;
+  }
+  .h50-md {
+    height: 50vh;
+  }
+  .ha-md {
+    height: auto;
+  }
+}
+
+@media (query(lg-up)) {
+  .h100-lg {
+    height: 100vh;
+  }
+  .h75-lg {
+    height: 75vh;
+  }
+  .h50-lg {
+    height: 50vh;
+  }
+  .ha-lg {
+    height: auto;
+  }
+}
+
+@media (query(xl-up)) {
+  .h100-xl {
+    height: 100vh;
+  }
+  .h75-xl {
+    height: 75vh;
+  }
+  .h50-xl {
+    height: 50vh;
+  }
+  .ha-xl {
+    height: auto;
+  }
+}
+
+@media (query(xxl-up)) {
+  .h100-xxl {
+    height: 100vh;
+  }
+  .h75-xxl {
+    height: 75vh;
+  }
+  .h50-xxl {
+    height: 50vh;
+  }
+  .ha-xxl {
+    height: auto;
+  }
+}
