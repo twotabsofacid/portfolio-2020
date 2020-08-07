@@ -45,11 +45,18 @@ export default function Project({slug, projects}) {
                     'Project__image-wrapper--right-far': randomWalk === 2
                   })}
                 >
-                  <img
-                    className="Project__image"
-                    src={`${item.fields.file.url}?w=1440&fm=jpg&fl=progressive&q=70`}
-                    alt={item.fields.title}
-                  />
+                  <div className="wrap">
+                    <img
+                      className="Project__image pa2"
+                      src={`${item.fields.file.url}?w=1440&fm=jpg&fl=progressive&q=70`}
+                      alt={item.fields.title}
+                    />
+                  </div>
+                  {item.fields.description && (
+                    <div className="Project__image-description pa2">
+                      <p>{item.fields.description}</p>
+                    </div>
+                  )}
                 </li>
               )
             })}
