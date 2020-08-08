@@ -5,8 +5,61 @@ const animationContainer = () => {
   const canvasContainer = useRef(null);
 
   useEffect(() => {
+    let sceneCounter = 0;
+    let maxCounter = 100;
+    let colorCounter = 0;
+    const colors = [
+      {
+        r: 1,
+        g: 1,
+        b: 1
+      },
+      {
+        r: 0.8,
+        g: 1,
+        b: 1
+      },
+      {
+        r: 1,
+        g: 1,
+        b: 0.8
+      },
+      {
+        r: 1,
+        g: 0.8,
+        b: 1
+      },
+      {
+        r: 1,
+        g: 0.8,
+        b: 0.8
+      },
+      {
+        r: 0.8,
+        g: 1,
+        b: 0.8
+      },
+      {
+        r: 0.8,
+        g: 0.8,
+        b: 1
+      }
+    ];
+    const lerpColor = (start, stop, t) => {
+      return {
+        r: start.r * (1 - t) + stop.r * t,
+        g: start.g * (1 - t) + stop.g * t,
+        b: start.b * (1 - t) + stop.b * t
+      };
+    }
     // Render function
     const render = () => {
+      pointLight.color = lerpColor(colors[colorCounter], colors[(colorCounter  +1) % colors.length], Math.min(1, sceneCounter/maxCounter));
+      sceneCounter++;
+      if (sceneCounter > maxCounter) {
+        sceneCounter = 0;
+        colorCounter = (colorCounter + 1) % colors.length;
+      }
       let time = Date.now() * 0.001;
       let rx = Math.sin(time * 0.7) * 0.05,
       ry = Math.sin(time * 0.3) * 0.05,
@@ -63,7 +116,7 @@ const animationContainer = () => {
     scene.add(group);
     const light = new THREE.AmbientLight(0xffffff, 1);
     scene.add(light);
-    let pointLight = new THREE.PointLight(0xffffff, 1);
+    let pointLight = new THREE.PointLight(colors[0], 1);
     scene.add(pointLight);
     renderer = new THREE.WebGLRenderer({
       antialias: true,
