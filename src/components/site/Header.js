@@ -17,11 +17,6 @@ export default function Header() {
             <a className="Navigation__link">CV</a>
           </Link>
         </li>
-        <li className="Navigation__item">
-          <Link href="/">
-            <a className="Navigation__link">Contact</a>
-          </Link>
-        </li>
       </ul>
     </header>
   );
