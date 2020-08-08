@@ -9,6 +9,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import classnames from 'classnames';
 // The components
 import Layout from 'components/Layout';
+import AnimationContainer from 'components/modules/animationContainer';
 
 export default function Project({slug, projects}) {
   const [preview, setPreview] = useState(false);
@@ -26,6 +27,7 @@ export default function Project({slug, projects}) {
   }
   return (
     <Layout className="Project" preview={false}>
+      <AnimationContainer />
       <article className="Container Project mt5">
         <h2 className="body-header Project__title">{project.title}</h2>
         <section className="Project__description mt3">
