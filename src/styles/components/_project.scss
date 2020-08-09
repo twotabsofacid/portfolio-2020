@@ -1,13 +1,13 @@
 .Project {
   &__image-wrapper {
-    max-width: 50.0rem;
+    max-width: 60.0rem;
   }
   &__title {
     max-width: 1000px;
     display: inline-block;
   }
   &__description {
-    max-width: 600px;
+    max-width: 43.75rem;
     line-height: 1.5;
     font-size: 1.5rem;
   }
@@ -55,7 +55,7 @@
     }
     &-description {
       width: 100%;
-      background: linear-gradient(57deg, color('midgrayone'), color('midgraythree'));
+      background: linear-gradient(57deg, color('darkgray'), color('midgrayone'));
       font-size: 1.15rem;
       line-height: 1.5;
       position: relative;
