@@ -12,7 +12,7 @@ export default function About() {
       <AnimationContainer />
       <article className="Container">
         <h2 className="body-header Project__title">I am an artist and developer</h2>
-        <p className="Project__description mt3">I specialize in physical and digital creative coding. If you're working on an interesting project I would love to hear from you, you can reach me at <a href="mailto:seanmichaelscanlan@gmail.com">seanmichaelscanlan at gmail</a>.</p>
+        <p className="Project__description mt3">I specialize in physical and digital creative coding. If you're working on an interesting project I would love to hear from you. You can reach me at <a href="mailto:seanmichaelscanlan@gmail.com">seanmichaelscanlan at gmail</a>.</p>
       </article>
     </Layout>
   )

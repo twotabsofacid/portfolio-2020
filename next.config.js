@@ -27,7 +27,12 @@ const prodConfig = withPlugins(
         'src/svg/**/*'
       ],
       purgeCss: {
-        whitelist: () => []
+        whitelist: () => [
+          'page-transition-enter',
+          'page-transition-enter-active',
+          'page-transition-exit',
+          'page-transition-exit-active'
+        ]
       }
     })
   )

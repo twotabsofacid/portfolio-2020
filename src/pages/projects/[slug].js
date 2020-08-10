@@ -55,7 +55,11 @@ export default function Project({slug, projects}) {
                     />
                   </div>
                   {item.fields.description && (
-                    <div className="Project__image-description pa2">
+                    <div
+                      className={classnames('Project__image-description pa3', {
+                        'Project__image-description--wide': item.fields.description.split(' ').length > 60
+                      })}
+                    >
                       <p>{item.fields.description}</p>
                     </div>
                   )}

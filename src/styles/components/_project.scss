@@ -60,6 +60,9 @@
       line-height: 1.5;
       position: relative;
       max-width: 28.75rem;
+      &--wide {
+        max-width: 45.0rem;
+      }
       @media (query(lg-up)) {
         margin-top: -4rem;
         margin-left: -2rem;
