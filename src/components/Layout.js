@@ -12,7 +12,7 @@ export default function Layout({
     <>
       <Head>
         <title>Sean Scanlan</title>
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="64x64" />
+        <link rel="icon" type="image/png" href="/images/favicon-alt.png" sizes="64x64" />
         <meta name="description" content="" />
         {/* Facebook */}
         <meta name="og:title" content="" />
