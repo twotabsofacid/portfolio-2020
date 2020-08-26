@@ -5,6 +5,11 @@
   &__title {
     max-width: 1000px;
     display: inline-block;
+    color: color('black');
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.125rem;
+    -webkit-text-stroke-color: color('black');
+    -webkit-font-smoothing: subpixel-antialiased;
   }
   &__description {
     max-width: 43.75rem;
@@ -14,6 +19,11 @@
   &__link {
     display: inline;
     border-bottom: none;
+    color: color('black');
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.125rem;
+    -webkit-text-stroke-color: color('black');
+    -webkit-font-smoothing: subpixel-antialiased;
     &:hover {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -21,7 +31,7 @@
       border-bottom-color: transparent;
       background-image: linear-gradient(to right, color('blue'), color('purple'));
       background-size: 400% 400%;
-      animation: backgroundPositionShift 4s ease infinite;
+      animation: backgroundPositionShift 2s ease infinite;
     }
   }
   &__image {
@@ -60,6 +70,7 @@
       line-height: 1.5;
       position: relative;
       max-width: 28.75rem;
+      color: color('white');
       &--wide {
         max-width: 45.0rem;
       }

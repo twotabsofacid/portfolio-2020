@@ -17,9 +17,14 @@ export default function Home(context) {
       <article className="Container Project mt5">
         {projects.map((item, index) => {
           return (
-            <Link key={index} as={`/projects/${item.slug}`} href="/projects/[slug]">
-              <a className="body-header Project__link">{item.title} </a>
-            </Link>
+            <div key={index} className="body-header">
+              <Link as={`/projects/${item.slug}`} href="/projects/[slug]">
+                <a className="Project__link">{item.title}</a>
+              </Link>
+              {index < projects.length - 1 && (
+                <span className="body-icon"> ⍨ </span>
+              )}
+             </div>
           );
         })}
       </article>
