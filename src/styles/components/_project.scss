@@ -5,11 +5,14 @@
   &__title {
     max-width: 1000px;
     display: inline-block;
-    color: color('black');
+    color: color('gray');
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.125rem;
-    -webkit-text-stroke-color: color('black');
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color: color('gray');
     -webkit-font-smoothing: subpixel-antialiased;
+    @media (query(lg-up)) {
+      -webkit-text-stroke-width: 0.125rem;
+    }
   }
   &__description {
     max-width: 43.75rem;
@@ -19,11 +22,14 @@
   &__link {
     display: inline;
     border-bottom: none;
-    color: color('black');
+    color: color('gray');
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.125rem;
-    -webkit-text-stroke-color: color('black');
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color: color('gray');
     -webkit-font-smoothing: subpixel-antialiased;
+    @media (query(lg-up)) {
+      -webkit-text-stroke-width: 0.125rem;
+    }
     &:hover {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -31,7 +37,7 @@
       border-bottom-color: transparent;
       background-image: linear-gradient(to right, color('blue'), color('purple'));
       background-size: 400% 400%;
-      animation: backgroundPositionShift 2s ease infinite;
+      animation: backgroundPositionShift 3s ease infinite;
     }
   }
   &__image {

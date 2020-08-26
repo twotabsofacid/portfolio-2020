@@ -22,7 +22,7 @@ export default function Home(context) {
                 <a className="Project__link">{item.title}</a>
               </Link>
               {index < projects.length - 1 && (
-                <span className="body-icon"> ⍨ </span>
+                <span className="body-icon"> ❒ </span>
               )}
              </div>
           );

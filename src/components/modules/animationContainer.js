@@ -10,39 +10,39 @@ const animationContainer = () => {
     let colorCounter = 0;
     const colors = [
       {
-        r: 0.6,
-        g: 0.6,
-        b: 0.6
+        r: 1.0,
+        g: 1.0,
+        b: 1.0
       },
       {
         r: 0.8,
-        g: 0.6,
-        b: 0.6
+        g: 1.0,
+        b: 1.0
       },
       {
-        r: 0.6,
-        g: 0.6,
+        r: 1.0,
+        g: 1.0,
         b: 0.8
       },
       {
-        r: 0.6,
+        r: 1.0,
         g: 0.8,
-        b: 0.6
+        b: 1.0
       },
       {
-        r: 0.6,
+        r: 1.0,
         g: 0.8,
-        b: 0.8
-      },
-      {
-        r: 0.8,
-        g: 0.6,
         b: 0.8
       },
       {
         r: 0.8,
+        g: 1.0,
+        b: 0.8
+      },
+      {
+        r: 0.8,
         g: 0.8,
-        b: 0.6
+        b: 1.0
       }
     ];
     const lerpColor = (start, stop, t) => {
@@ -101,10 +101,11 @@ const animationContainer = () => {
       let material = new THREE.MeshLambertMaterial({
         color: 0xff5566
       });
+      const gray = Math.random()/12;
       const r = (Math.random() + 1)/2;
       const g = (Math.random() + 1)/2;
       const b = (Math.random() + 1)/2;
-      material.color.setRGB(r, g, b);
+      material.color.setRGB(gray, gray, gray);
       let mesh = new THREE.Mesh(geometry, material);
       mesh.position.x = Math.random() * wX - (wX/2);
       mesh.position.y = Math.random() * wY - (wY/2);
