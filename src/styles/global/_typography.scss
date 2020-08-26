@@ -19,11 +19,11 @@ a {
 }
 .body-header {
   font-family: $header-font;
-  font-weight: bold;
+  font-weight: normal;
   display: inline;
-  font-size: calc(4.8vh + 4.1vw);
+  font-size: calc(3.8vh + 3.6vw);
   color: color('black');
-  letter-spacing: -0.0625rem;
+  //letter-spacing: -0.0625rem;
   line-height: 1.0125;
 }
 .body-icon {

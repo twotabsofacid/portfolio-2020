@@ -1,10 +1,9 @@
 .Header {
   &__logo {
-    font-family: $special-header-font;
+    font-family: $header-font;
     font-weight: bold;
     font-size: 2rem;
     border-bottom: none;
-    letter-spacing: -0.0625rem;
   }
   .Navigation {
     &__link {

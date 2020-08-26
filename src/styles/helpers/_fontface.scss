@@ -1,1 +1,54 @@
-
+@font-face {
+  font-family: "DrukWide";
+  src: url("/static/fonts/druk-medium.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/druk-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/druk-medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/static/fonts/druk-medium.woff") format("woff"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DrukWide";
+  src: url("/static/fonts/druk-bold.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/druk-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/druk-bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/static/fonts/druk-bold.woff") format("woff"); /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlexSans";
+  src: url("/static/fonts/IBMPlexSans-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/IBMPlexSans-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/IBMPlexSans-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/static/fonts/IBMPlexSans-Regular.woff") format("woff"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlexSans";
+  src: url("/static/fonts/IBMPlexSans-Italic.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/IBMPlexSans-Italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/IBMPlexSans-Italic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/static/fonts/IBMPlexSans-Italic.woff") format("woff"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PlexSerif";
+  src: url("/static/fonts/IBMPlexSerif-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/IBMPlexSerif-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/IBMPlexSerif-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/static/fonts/IBMPlexSerif-Regular.woff") format("woff"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlexSerif";
+  src: url("/static/fonts/IBMPlexSerif-Italic.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/IBMPlexSerif-Italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/IBMPlexSerif-Italic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/static/fonts/IBMPlexSerif-Italic.woff") format("woff"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: italic;
+}
