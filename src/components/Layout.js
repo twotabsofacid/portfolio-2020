@@ -33,8 +33,6 @@ export default function Layout({
         <meta name="twitter:description" content="" />
         <meta name="twitter:image" content="" />
         <meta name="twitter:image:alt" content="" />
-        {/* Fonts */}
-        <link rel="stylesheet" href="https://use.typekit.net/gmo5fwm.css" />
       </Head>
       <div className={`Body ${className}`}>
         <Header />
