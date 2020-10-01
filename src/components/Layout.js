@@ -15,22 +15,21 @@ export default function Layout({
         <link rel="icon" type="image/png" href="/images/favicon-alt.png" sizes="64x64" />
         <meta name="description" content="" />
         {/* Facebook */}
-        <meta name="og:title" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:description" content="" />
+        <meta name="og:title" content="Sean Michael Scanlan" />
+        <meta property="og:url" content="twotabsofacid.com" />
+        <meta property="og:description" content="Sean Scanlan is an artist and developer specializing in physical and digital creative coding" />
         <meta property="og:image" content="" />
         <meta property="og:image:width" content=""/>
         <meta property="og:image:height" content="" />
         <meta property="og:image:alt" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="" />
+        <meta property="og:site_name" content="Sean Michael Scanlan" />
         <meta property="og:locale" content="en_US" />
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="" />
-        <meta name="twitter:url" content="" />
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:description" content="" />
+        <meta property="twitter:card" content="summary" />
+        <meta name="twitter:url" content="twotabsofacid.com" />
+        <meta name="twitter:title" content="Sean Michael Scanlan" />
+        <meta name="twitter:description" content="Sean Scanlan is an artist and developer specializing in physical and digital creative coding" />
         <meta name="twitter:image" content="" />
         <meta name="twitter:image:alt" content="" />
       </Head>
