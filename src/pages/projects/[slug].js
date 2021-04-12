@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 // the data
-import { getData } from 'lib/api';
+import { getProjects } from 'lib/api';
 // The modules
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import ErrorPage from 'next/error';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import classnames from 'classnames';
+import ReactGA from 'react-ga';
 // The components
 import Layout from 'components/Layout';
 import AnimationContainer from 'components/modules/animationContainer';
@@ -25,6 +26,8 @@ export default function Project({slug, projects}) {
   if (!router.isFallback && !project) {
     return <ErrorPage statusCode={404} />
   }
+  ReactGA.initialize('UA-109026249-1');
+  ReactGA.pageview(`Project Page: ${project.title}`);
   return (
     <Layout className="Project" preview={false}>
       <AnimationContainer />
@@ -75,7 +78,7 @@ export default function Project({slug, projects}) {
 
 export async function getStaticProps(context) {
   const params = context.params;
-  const projects = await getData(false);
+  const projects = await getProjects(false);
   return {
     props: {
       slug: params,
@@ -85,7 +88,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const projects = await getData(false);
+  const projects = await getProjects(false);
   return {
     paths: projects?.map(item => `/projects/${item.fields.slug}`) ?? [],
     fallback: false

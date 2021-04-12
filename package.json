@@ -10,7 +10,7 @@
     "setup": "node ./helpers/contentful/setup.js $CONTENTFUL_SPACE_ID $CONTENTFUL_MANAGEMENT_TOKEN"
   },
   "dependencies": {
-    "@contentful/rich-text-react-renderer": "^14.1.1",
+    "@contentful/rich-text-react-renderer": "^14.1.2",
     "classnames": "^2.2.6",
     "contentful": "^7.14.4",
     "contentful-import": "^7.7.18",
@@ -19,6 +19,7 @@
     "next-page-transitions": "^1.0.0-beta.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-ga": "^3.3.0",
     "three": "^0.119.1"
   },
   "devDependencies": {

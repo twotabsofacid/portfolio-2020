@@ -2,15 +2,17 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
+import ReactGA from 'react-ga';
 // The Data
-import { getData, getHomepageProjects } from 'lib/api';
+import { getHomepageProjects } from 'lib/api';
 // The modules
 import Layout from 'components/Layout';
 import AnimationContainer from 'components/modules/animationContainer';
 
 export default function Home(context) {
   const projects = context.projects.map(item => item.fields);
-
+  ReactGA.initialize('UA-109026249-1');
+  ReactGA.pageview('Home');
   return (
     <Layout className="Home" preview={false}>
       <AnimationContainer />

@@ -13,8 +13,12 @@ const previewClient = createClient({
 
 const getClient = preview => (preview ? previewClient : client)
 
-// Instead of 'data' we'd have what our content name is here
-export async function getData(preview) {
+/**
+ * Get all projects
+ * @param  {boolean} preview [are we in preview mode?]
+ * @return {object}         [projects]
+ */
+export async function getProjects(preview) {
   const entries = await getClient(preview).getEntries({
     'sys.contentType.sys.id[in]': 'project',
     include: 3
@@ -22,7 +26,24 @@ export async function getData(preview) {
   return entries.items.reverse()
 }
 
-// Instead of 'data' we'd have what our content name is here
+/**
+ * Get about page
+ * @param  {boolean} preview [are we in preview mode?]
+ * @return {object}         [projects list]
+ */
+export async function getAboutPage(preview) {
+  const entries = await getClient(preview).getEntries({
+    'sys.contentType.sys.id[in]': 'aboutPage',
+    include: 3
+  })
+  return entries.items[0].fields
+}
+
+/**
+ * Get homepage projects
+ * @param  {boolean} preview [are we in preview mode?]
+ * @return {object}         [projects list]
+ */
 export async function getHomepageProjects(preview) {
   const entries = await getClient(preview).getEntries({
     'sys.contentType.sys.id[in]': 'homepage',
