@@ -9,3 +9,16 @@
     background-position: 0% 50%;
   }
 }
+@keyframes special-text {
+  0% {
+    transform: scale(0.85, 0.85) rotate(0deg);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: scale(1, 1) rotate(10deg);
+    background-position: 0% 50%;
+  }
+}
