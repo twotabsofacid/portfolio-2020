@@ -1,0 +1,23 @@
+.Special {
+  &__notice {
+    font-family: $header-font;
+    font-weight: bold;
+    display: inline;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+    line-height: 1.0125;
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 101;
+    color: color('blue');
+    animation: special-text 5s infinite alternate ease-out;
+    transform-style: preserve-3d;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45), 1px 1px 1px rgba(0, 0, 0, 0.5),
+      0px 0px 1px rgba(0, 0, 0, 0.2);
+    display: none;
+    @media (query(lg-up)) {
+      display: inline;
+    }
+  }
+}

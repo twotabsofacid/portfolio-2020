@@ -8,9 +8,10 @@ import { getHomepageProjects } from 'lib/api';
 // The modules
 import Layout from 'components/Layout';
 import AnimationContainer from 'components/modules/animationContainer';
+import SpecialNotice from 'components/modules/specialNotice';
 
 export default function Home(context) {
-  const projects = context.projects.map(item => item.fields);
+  const projects = context.projects.map((item) => item.fields);
   ReactGA.initialize('UA-109026249-1');
   ReactGA.pageview('Home');
   return (
@@ -26,12 +27,13 @@ export default function Home(context) {
               {index < projects.length - 1 && (
                 <span className="body-icon"> ❒ </span>
               )}
-             </div>
+            </div>
           );
         })}
       </article>
+      <SpecialNotice />
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps(context) {
@@ -40,5 +42,5 @@ export async function getStaticProps(context) {
     props: {
       projects: projects
     }
-  }
+  };
 }

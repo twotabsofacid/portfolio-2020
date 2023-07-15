@@ -14,10 +14,12 @@ export default function Header() {
         </li>
         <li className="Navigation__item pr3-md">
           <Link href="/static/sscanlan-cv.pdf">
-            <a target="_blank" className="Navigation__link">CV</a>
+            <a target="_blank" className="Navigation__link">
+              CV
+            </a>
           </Link>
         </li>
       </ul>
     </header>
   );
-};
+}

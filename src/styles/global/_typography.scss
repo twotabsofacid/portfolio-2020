@@ -11,7 +11,7 @@ body,
 }
 a {
   text-decoration: none;
-  border-bottom: 1px solid color('gray');
+  border-bottom: 1px solid color('black');
   &:hover {
     color: color('blue');
     border-bottom-color: color('blue');
@@ -22,15 +22,15 @@ a {
   font-weight: normal;
   display: inline;
   font-size: calc(3.8vh + 3.6vw);
-  color: color('gray');
+  color: color('black');
   //letter-spacing: -0.0625rem;
   line-height: 1.0125;
 }
 .body-icon {
-  color: color('gray');
+  color: color('black');
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0.0625rem;
-  -webkit-text-stroke-color: color('gray');
+  -webkit-text-stroke-color: color('black');
   -webkit-font-smoothing: subpixel-antialiased;
   @media (query(lg-up)) {
     -webkit-text-stroke-width: 0.125rem;

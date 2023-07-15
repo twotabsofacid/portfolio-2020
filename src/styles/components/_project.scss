@@ -8,7 +8,7 @@
     color: color('gray');
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.0625rem;
-    -webkit-text-stroke-color: color('gray');
+    -webkit-text-stroke-color: color('black');
     -webkit-font-smoothing: subpixel-antialiased;
     @media (query(lg-up)) {
       -webkit-text-stroke-width: 0.125rem;
@@ -22,10 +22,10 @@
   &__link {
     display: inline;
     border-bottom: none;
-    color: color('gray');
+    color: color('black');
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.0625rem;
-    -webkit-text-stroke-color: color('gray');
+    -webkit-text-stroke-color: color('black');
     -webkit-font-smoothing: subpixel-antialiased;
     @media (query(lg-up)) {
       -webkit-text-stroke-width: 0.125rem;
@@ -46,7 +46,7 @@
     &-wrapper {
       position: relative;
       .wrap {
-        background: linear-gradient(-45deg, color('midgrayone'), color('midgraytwo'));
+        background: linear-gradient(-45deg, color('black'), color('darkgray'));
       }
       &--far-left {
         @media (query(lg-up)) {
@@ -71,9 +71,10 @@
     }
     &-description {
       width: 100%;
-      background: linear-gradient(57deg, color('darkgray'), color('midgrayone'));
-      font-size: 1.15rem;
+      background: linear-gradient(57deg, color('darkgray'), color('black'));
+      font-size: 1rem;
       line-height: 1.5;
+      letter-spacing: 0.05rem;
       position: relative;
       max-width: 28.75rem;
       color: color('white');
